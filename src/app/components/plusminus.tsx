@@ -2,7 +2,7 @@
 import React, {useState} from "react";
 import {increment} from "@/app/actions";
 
-const plusMinus = () => {
+const PlusMinus = () => {
     const [text,setText] = useState("");
     const handleClickPlus = async() => {
         await increment().then(res=>{
@@ -18,4 +18,4 @@ const plusMinus = () => {
     )
 }
 
-export default plusMinus;
+export default PlusMinus;
